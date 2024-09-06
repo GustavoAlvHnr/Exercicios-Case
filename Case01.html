@@ -14,20 +14,20 @@ pagamento a seguir:
 */
 
     const preco = Number(prompt(`Qual o valor do produto?`).replace(",","."));
-    let metodoPag = prompt(`Digite o código da condição de pagamento?`);
+    let metodoPag = Number(prompt(`Digite o código da condição de pagamento?`));
     let precoFinal = 0;
 
     switch(metodoPag){
-        case "1":
+        case 1:
             precoFinal = preco * 0.9
 break
-        case "2": 
+        case 2: 
             precoFinal = preco * 0.95
 break
-        case "3": 
+        case 3: 
             precoFinal = preco
 break
-        case "4": 
+        case 4: 
             precoFinal = preco * 1.1
 break
         default: 
