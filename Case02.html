@@ -1,0 +1,41 @@
+<script>
+/*
+Construa um algoritmo que leia o código de um determinado produto e mostre a sua classificação.
+e obedeça a seguinte tabela:
+Código Classificação
+1 - Alimento não-perecível
+2, 3 ou 4 - Alimento perecível
+5 ou 6 - Vestuário
+7 - Higiene pessoal
+8, 9, 10 - Utensílios domésticos
+Qualquer outro código Inválido
+*/
+
+    let cdgAlimento = Number(prompt(`Qual ó código do produto?`));
+
+    switch(cdgAlimento){
+        case 1: 
+            document.write("Esse produto é um alimento não perecivel");
+    break
+        case 2: 
+        case 3: 
+        case 4: 
+            document.write("Esse produto é um alimento perecivel");
+    break
+        case 5:
+        case 6:
+            document.write("Esse produto é um vestuário");
+    break
+        case 7: 
+            document.write("Esse produto é para higiene pessoal");
+    break
+        case 8: 
+        case 9: 
+        case 10: 
+            document.write("Esse produto é um utensílio doméstico");
+    break
+        default: 
+            document.write("Código inválido")
+    }
+
+</script>
